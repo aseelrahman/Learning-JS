@@ -6,6 +6,6 @@ let myObject = {
 };
 
 for(let key in myObject){
-    console.log("Key: ", key, ":", myObject[key], "|", "type:", typeof(key));
+    console.log("Key: ", key, ":", myObject[key], "|", "type:", typeof(myObject[key]));
     
 }
