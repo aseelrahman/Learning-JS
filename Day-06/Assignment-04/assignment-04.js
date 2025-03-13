@@ -82,3 +82,24 @@ function calculateFinalScore(obj) {
 
 
 
+function  waitingTime(waitingTimes  , serialNumber) {
+
+    if(Array.isArray(waitingTimes) && !isNaN(serialNumber) ){
+        let totalTime = 0;
+    
+        for(time of waitingTimes){
+            totalTime += time;
+        }
+        let averageTime = Math.round(totalTime/waitingTimes.length);
+        let waitTime = averageTime * (serialNumber - waitingTimes.length -1);
+        return waitTime;
+    }
+    else{
+        return 'Invalid Input'
+    }
+   
+}
+
+let asd = waitingTime([13, 2, 6, 7, 10], 6);
+console.log(asd);
+
