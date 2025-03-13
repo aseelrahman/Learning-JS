@@ -47,7 +47,38 @@ function checkDigitsInName(name) {
     }
 }
 
-let name = checkDigitsInName(123213);
-console.log(name);
+
+function calculateFinalScore(obj) {
+    const testScore = obj.testScore;
+    const schoolGrade = obj.schoolGrade;
+    const parentProfession = obj.isFFamily;
+
+    let totalScore = 0;
+
+    if(testScore <= 50 && schoolGrade <= 30 && parentProfession === true){
+        totalScore = totalScore + testScore + schoolGrade + 20;
+        if(totalScore >= 80){
+            return true;
+        }
+        else{
+            return false;
+        }
+        
+    }
+    else if(testScore <= 50 && schoolGrade <= 30 && parentProfession === false){
+        totalScore = totalScore + testScore + schoolGrade;
+        if(totalScore >= 80){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+   
+    else{
+        return "Invalid Input"
+    }
+}
+
 
 
