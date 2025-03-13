@@ -99,7 +99,3 @@ function  waitingTime(waitingTimes  , serialNumber) {
     }
    
 }
-
-let asd = waitingTime([13, 2, 6, 7, 10], 6);
-console.log(asd);
-
