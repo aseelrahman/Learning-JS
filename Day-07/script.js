@@ -5,3 +5,12 @@ for(const fruit of fruits){
 
 const fruitTitle = document.getElementById("fruit-title");
 fruitTitle.innerText = 'Inshallah I\'ll try these fruits.'
+
+// querySelectorAll
+
+const someLi = document.querySelectorAll("#fruits-container li")
+console.log(someLi);
+for(const li of someLi){
+    console.log(li.innerText);
+    
+}
