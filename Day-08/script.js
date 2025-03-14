@@ -14,3 +14,7 @@ for(const li of someLi){
     console.log(li.innerText);
     
 }
+
+
+fruitTitle.getAttribute('id')
+fruitTitle.setAttribute('title', 'giving a title')
