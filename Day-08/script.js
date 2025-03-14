@@ -29,7 +29,7 @@ for(const section of sections){
     section.style.padding = "10px";
     section.style.backgroundColor = "lightgray";
 }
-const fruitContainer = document.getElementById('fruits-to-try');
-fruitContainer.classList.add('text-center');
-fruitContainer.classList.remove('large-text')
+// const fruitContainer = document.getElementById('fruits-to-try');
+// fruitContainer.classList.add('text-center');
+// fruitContainer.classList.remove('large-text')
 
