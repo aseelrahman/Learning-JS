@@ -20,3 +20,18 @@ document.getElementById('btn-update').addEventListener('click', function(){
     p.innerText = inputText;
     inputField.value = '';
 })
+
+// Comment Area 
+
+document.getElementById('btn-post').addEventListener('click', function(){
+    const textInput = document.getElementById('text-input');
+    const textInputField = textInput.value;
+
+    const p = document.createElement('p');
+    p.innerText = textInputField;
+
+    const commentSection = document.getElementById('comment-container');
+    commentSection.appendChild(p)
+
+    textInput.value = "";
+})
