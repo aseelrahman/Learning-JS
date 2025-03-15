@@ -35,3 +35,42 @@ document.getElementById('btn-post').addEventListener('click', function(){
 
     textInput.value = "";
 })
+
+// More events
+// document.getElementById('text-field').addEventListener('focus', function(){
+//     console.log('Event triggered inside the input field');
+    
+// })
+// document.getElementById('text-field').addEventListener('blur', function(){
+//     console.log('Event triggered inside the input field blur.');
+    
+// })
+// document.getElementById('text-field').addEventListener('keydown', function(event){
+//     console.log(event.target.value);
+    
+// })
+document.getElementById('text-field').addEventListener('keyup', function(event){
+    console.log(event.target.value);
+    
+})
+
+document.getElementById('btn-more').addEventListener('mousemove', function(){
+    console.log('Event triggred');
+    
+})
+
+//  Delete confirmation
+
+document.getElementById('text-field-delete').addEventListener('keyup', function(event){
+    if(event.target.value === "delete"){
+        document.getElementById('btn-delete').removeAttribute('disabled')
+    }
+    else{
+        document.getElementById('btn-delete').setAttribute('disabled', true)
+    }
+})
+
+document.getElementById('btn-delete').addEventListener('click', function(){
+    const secret = document.getElementById('secret-info');
+    secret.style.display = 'none'
+})
