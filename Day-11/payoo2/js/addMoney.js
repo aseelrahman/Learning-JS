@@ -1,4 +1,3 @@
-console.log('add money loaded');
 document.getElementById('btn-add-money').addEventListener('click', function(event){
     event.preventDefault();
 
@@ -7,8 +6,6 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
     
     const addMoney = getInputFieldValueById('input-add-money');
     const pinNumber = getInputFieldValueById('input-pin-number');
-    console.log('add money value', addMoney);
-    console.log('PIN: ', pinNumber);
 
     // Wrong way to verify
 
@@ -16,6 +13,15 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
         const balance = getTextFieldValueById('account-balance');
         const newBalance = balance + addMoney;
 
+        // add to transaction history
+
+        const p = document.createElement('p')
+        p.innerText = `Added Money: ${addMoney} TK. New Balance ${newBalance}`;
+        console.log(p);
+        
+        document.getElementById('transaction-container').appendChild(p);
+
+        
         document.getElementById('account-balance').innerText = newBalance;
         
     }

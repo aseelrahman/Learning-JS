@@ -13,5 +13,11 @@ function getTextFieldValueById(id){
 }
 
 function showSectionById(id){
-
+    // hide all the sections
+    document.getElementById('add-money-form').classList.add('hidden')
+    document.getElementById('cash-out-form').classList.add('hidden')
+    document.getElementById('transaction-history').classList.add('hidden')
+    
+    // Show the section with provided ID
+    document.getElementById(id).classList.remove('hidden')
 }
