@@ -1,1 +1,8 @@
-console.log('utilities file added');
+/**
+ * 
+ * Common shared functions here
+ */
+
+function getInputFieldValueById(){
+     
+}
